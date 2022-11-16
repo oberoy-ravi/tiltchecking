@@ -264,29 +264,26 @@ var typed = new Typed('.typing-text', {
     typeSpeed : 120
 });
 
+let touchDevice;
 
-VanillaTilt.init(document.querySelectorAll('.tilt'),{
-    max:25   
+touchDevice = ('ontouchstart' in document.documentElement);
+
+if(!touchDevice){
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
+max: 25,
+speed: 400,
 });
-
-$( document ).ready(function() {
-  if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
-    VanillaTilt.init(document.querySelectorAll('.tilt'),{
-    max:0
-    });
-  }
-});
-
-
-
-
+console.log('tilt is active')
+} else {
+console.log('tilt is inactive')
+}
 </script>
-
 
 
 <!-- aos data -->
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js">
+</script>
 <script>
   AOS.init({
     delay: 30,
