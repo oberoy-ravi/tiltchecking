@@ -130,6 +130,10 @@ section {
     letter-spacing: .2rem;
 }
 
+.btn a:visited{
+  color: rgb(43, 27, 7);
+}
+
 /*header{
     position: fixed;
     top: 140px; right: 500px;
