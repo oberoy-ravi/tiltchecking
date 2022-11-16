@@ -130,7 +130,7 @@ section {
     letter-spacing: .2rem;
 }
 
-.btn a:visited{
+.btn:visited {
   color: rgb(43, 27, 7);
 }
 
