@@ -130,8 +130,8 @@ section {
     letter-spacing: .2rem;
 }
 
-.btn:visited {
-  color: rgb(43, 27, 7);
+.btn a:visited {
+  color: rgb(249, 198, 145);
 }
 
 /*header{
